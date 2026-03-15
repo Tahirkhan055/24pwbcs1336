@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tahir Khattak Portfolio</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap" rel="stylesheet">
+
+<style>
+/* Color scheme */
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2c3e50;
+    --accent-color: #e74c3c;
+    --bg-color: #f4f4f4;
+    --text-color: #333;
+}
+
+/* Global styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: var(--bg-color);
+    color: var(--text-color);
+    margin: auto;
+    padding: 0;
+    line-height: 1.6;
+    text-align: center;
+    max-width: 600px;
+}
+
+/* Navigation menu */
+nav {
+    background: var(--secondary-color);
+    padding: 15px 30px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    font-weight: 600;
+    transition: background 0.3s, transform 0.2s;
+}
+nav a:hover, nav a.active {
+    background: var(--primary-color);
+    border-radius: 5px;
+    transform: scale(1.05);
+}
+
+/* Header */
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--primary-color);
+    margin: 30px 0 10px 0;
+    font-size: 48px;
+}
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--secondary-color);
+    margin-top: 30px;
+}
+
+/* Profile image styling */
+.profile-img {
+    width: 180px;
+    border-radius: 50%;
+    margin: 20px auto;
+    display: block;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.profile-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+/* Sections */
+section {
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+/* Contact section */
+#contact {
+    background: var(--primary-color);
+    color: white;
+    padding: 30px 20px;
+    border-radius: 10px;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    h1 { font-size: 36px; }
+    h2 { font-size: 24px; }
+    nav { gap: 15px; padding: 10px; }
+    .profile-img { width: 140px; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+    <a href="../index.html">Home</a>
+    <a href="profile.html" class="active">Profile</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<h1>Tahir Khattak</h1>
+<img src="../images/gallery/profile11.jpg" alt="Profile Picture" class="profile-img">
+
+<section>
+    <h2>About Me</h2>
+    <p>
+        Computer Science Student at UET Peshawar. Learning Web Development and GitHub Pages. 
+        My goal is to become a professional Web Developer.
+    </p>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <p>Email: tahirkhan@gmail.com</p>
+    <p>Phone: +923001234567</p>
+</section>
+
+</body>
+</html>

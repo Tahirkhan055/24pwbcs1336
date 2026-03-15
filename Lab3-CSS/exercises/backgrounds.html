@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Background Gallery</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 10px; /* page padding kam ki */
+}
+
+/* Section styles */
+section {
+    height: 80px; /* aur chhoti height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px; /* spacing kam ki */
+    text-align: center;
+}
+
+/* 1. Solid color background */
+.solid {
+    background-color: #3498db;
+}
+
+/* 2. Image background with repeat patterns */
+.image-repeat {
+    background-image: url('https://via.placeholder.com/60');
+    background-repeat: repeat;
+}
+
+/* 3. Linear gradient */
+.linear-gradient {
+    background: linear-gradient(45deg, #e74c3c, #f1c40f);
+}
+
+/* 4. Radial gradient */
+.radial-gradient {
+    background: radial-gradient(circle, #2ecc71, #27ae60);
+}
+
+/* 5. Multiple background layers */
+.multi-layer {
+    background-image: 
+        url('https://via.placeholder.com/80/ff0000/ffffff?text=L1'), 
+        url('https://via.placeholder.com/80/00ff00/ffffff?text=L2');
+    background-position: left top, right bottom;
+    background-repeat: no-repeat;
+    background-color: #34495e;
+}
+
+/* 6. Background blend modes */
+.blend-mode {
+    background-image: url('https://via.placeholder.com/150');
+    background-color: #8e44ad;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+</style>
+</head>
+<body>
+
+<section class="solid">Solid Color</section>
+<section class="image-repeat">Image Repeat</section>
+<section class="linear-gradient">Linear Gradient</section>
+<section class="radial-gradient">Radial Gradient</section>
+<section class="multi-layer">Multiple Layers</section>
+<section class="blend-mode">Blend Mode</section>
+
+</body>
+</html>

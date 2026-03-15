@@ -1,0 +1,326 @@
+img{
+
+width:200px;
+
+margin:20px;
+
+}
+
+.img1{
+
+border-radius:20px;
+
+}
+
+.img2{
+
+border-radius:50%;
+
+}
+
+.img3:hover{
+
+transform:scale(1.1);
+
+transition:0.4s;
+
+}
+
+
+.btn{
+
+padding:10px 20px;
+
+border:none;
+
+cursor:pointer;
+
+margin:10px;
+
+font-size:16px;
+
+transition:0.3s;
+
+}
+
+
+.small{
+
+font-size:12px;
+
+padding:5px 10px;
+
+}
+
+.medium{
+
+font-size:16px;
+
+}
+
+.large{
+
+font-size:22px;
+
+padding:15px 30px;
+
+}
+
+
+.blue{
+
+background-color:blue;
+
+color:white;
+
+}
+
+.green{
+
+background-color:green;
+
+color:white;
+
+}
+
+.red{
+
+background-color:red;
+
+color:white;
+
+}
+
+
+.gradient{
+
+background:linear-gradient(to right, purple, pink);
+
+color:white;
+
+}
+
+
+.shadow{
+
+background-color:black;
+
+color:white;
+
+box-shadow:3px 3px 8px gray;
+
+}
+
+
+.btn:hover{
+
+opacity:0.8;
+
+transform:scale(1.05);
+
+}
+
+
+.disabled{
+
+background-color:gray;
+
+cursor:not-allowed;
+
+}
+
+/* form styling */
+.reg-form{
+background-color:#f9f9f9;
+padding:20px;
+border-radius:10px;
+width:300px;
+margin:20px 0;
+}
+
+/* input fields */
+.reg-form input[type="text"],
+.reg-form input[type="email"],
+.reg-form select{
+width:100%;
+padding:8px;
+margin:5px 0 15px 0;
+border:1px solid #ccc;
+border-radius:5px;
+transition:0.3s;
+}
+
+/* focus state */
+.reg-form input:focus,
+.reg-form select:focus{
+border-color:blue;
+outline:none;
+}
+
+/* checkbox */
+.reg-form input[type="checkbox"]{
+width:auto;
+}
+
+/* error state example */
+.reg-form .error{
+border-color:red;
+}
+
+/* success state example */
+.reg-form .success{
+border-color:green;
+}
+
+/* card container */
+.card-container{
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+}
+
+/* individual card */
+.card{
+background-color:white;
+padding:15px;
+border-radius:10px;
+box-shadow:2px 2px 8px gray;
+text-align:center;
+transition:0.3s;
+width:200px;
+}
+
+/* hover effect */
+.card:hover{
+transform:translateY(-5px);
+box-shadow:4px 4px 12px gray;
+}
+
+/* card images */
+.card img{
+width:100%;
+border-radius:10px;
+}
+
+.nav-menu ul{
+list-style:none;
+padding:0;
+margin:0;
+display:flex;
+background-color:#333;
+}
+
+.nav-menu ul li{
+position:relative;
+}
+
+.nav-menu ul li a{
+display:block;
+padding:10px 20px;
+color:white;
+text-decoration:none;
+}
+
+.nav-menu ul li a:hover{
+background-color:#555;
+}
+
+.nav-menu ul li .dropdown{
+display:none;
+position:absolute;
+top:100%;
+left:0;
+background-color:#444;
+flex-direction:column;
+}
+
+.nav-menu ul li:hover .dropdown{
+display:flex;
+}
+
+.nav-menu ul li .dropdown li a{
+padding:10px;
+}
+
+.transform-gallery{
+display:flex;
+gap:20px;
+margin:20px 0;
+}
+
+.box{
+width:100px;
+height:100px;
+background-color:purple;
+color:white;
+display:flex;
+justify-content:center;
+align-items:center;
+transition:0.4s;
+}
+
+/* transforms */
+.rotate:hover{
+transform:rotate(20deg);
+}
+
+.scale:hover{
+transform:scale(1.2);
+}
+
+.translate:hover{
+transform:translateX(20px);
+}
+
+/* gradient text */
+.gradient-text{
+font-size:24px;
+font-weight:bold;
+background:linear-gradient(to right, red, orange, yellow);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+/* custom checkbox */
+.custom-checkbox{
+position:relative;
+padding-left:25px;
+cursor:pointer;
+user-select:none;
+}
+
+.custom-checkbox input{
+position:absolute;
+opacity:0;
+cursor:pointer;
+}
+
+.custom-checkbox .checkmark{
+position:absolute;
+left:0;
+top:0;
+height:20px;
+width:20px;
+background-color:#ccc;
+border-radius:5px;
+}
+
+.custom-checkbox input:checked ~ .checkmark{
+background-color:green;
+}
+
+/* loading animation */
+.loading{
+width:40px;
+height:40px;
+border:5px solid #f3f3f3;
+border-top:5px solid #3498db;
+border-radius:50%;
+animation:spin 1s linear infinite;
+margin:20px;
+}
+
+@keyframes spin{
+0% {transform:rotate(0deg);}
+100% {transform:rotate(360deg);}
+}

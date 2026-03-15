@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Weekly Course Schedule</title>
+<style>
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.5;
+}
+
+/* Navigation menu */
+nav {
+    background: #2c3e50;
+    padding: 10px;
+    text-align: center;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: background 0.3s;
+}
+nav a:hover, nav a.active {
+    background: #3498db;
+    border-radius: 5px;
+}
+
+/* Table container for responsiveness */
+/* Table container for responsiveness */
+.table-container {
+    overflow-x: auto;
+    margin: 20px auto;       /* center the table */
+    max-width: 800px;        /* limit table width */
+}
+
+/* Table styling */
+table {
+    border-collapse: collapse;
+    width: 100%;             /* table takes full width of container */
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+/* Header styling */
+th {
+    background-color: #3498db;
+    color: white;
+    font-weight: 600;
+}
+
+/* Zebra striping */
+tr:nth-child(even):not(:first-child) {
+    background-color: #f9f9f9;
+}
+
+/* Hover effect */
+tr:hover {
+    background-color: #d6eaf8;
+}
+
+/* Color-coded courses */
+td:contains("Web Tech") { background-color: #d1f2eb; }
+td:contains("Database") { background-color: #f9e79f; }
+td:contains("OOP") { background-color: #fadbd8; }
+td:contains("DLD") { background-color: #d5f5e3; }
+td:contains("Free") { background-color: #f8f9f9; }
+td:contains("Lunch Break") { background-color: #f5cba7; font-weight:bold; }
+
+/* Responsive font and padding */
+@media (max-width: 600px) {
+    th, td {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+}
+</style>
+</head>
+<body>
+
+<nav>
+    <a href="../index.html">Home</a>
+    <a href="profile.html">Profile</a>
+    <a href="schedule.html" class="active">Schedule</a>
+    <a href="registration.html">Registration</a>
+</nav>
+
+<h1 style="text-align:center; color:#3498db;">Weekly Course Schedule</h1>
+
+<div class="table-container">
+<table>
+    <tr>
+        <th>Time</th>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+    </tr>
+
+    <tr>
+        <td>9:00</td>
+        <td>Web Tech</td>
+        <td>Database</td>
+        <td>OOP</td>
+        <td>DLD</td>
+        <td>Free</td>
+    </tr>
+    <tr>
+        <td>11:00</td>
+        <td colspan="5">Lunch Break</td>
+    </tr>
+    <tr>
+        <td>1:00</td>
+        <td>DLD</td>
+        <td>Web Tech</td>
+        <td>Database</td>
+        <td>OOP</td>
+        <td>Free</td>
+    </tr>
+</table>
+</div>
+
+</body>
+</html>

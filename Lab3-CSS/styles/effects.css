@@ -1,0 +1,21 @@
+.color-bg{
+
+background-color:lightblue;
+
+padding:40px;
+
+margin:20px;
+
+}
+
+.gradient-bg{
+
+background:linear-gradient(to right, purple, pink);
+
+padding:40px;
+
+margin:20px;
+
+color:white;
+
+}

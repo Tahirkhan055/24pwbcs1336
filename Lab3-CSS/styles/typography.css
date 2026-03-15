@@ -1,0 +1,33 @@
+.font1{
+
+font-family:'Roboto', sans-serif;
+
+font-size:20px;
+
+}
+
+.font2{
+
+font-family:'Poppins', sans-serif;
+
+font-size:2em;
+
+}
+
+.font3{
+
+font-family:'Playfair Display', serif;
+
+font-size:150%;
+
+}
+
+.shadow{
+
+text-shadow:2px 2px 5px gray;
+
+text-align:center;
+
+text-transform:uppercase;
+
+}
