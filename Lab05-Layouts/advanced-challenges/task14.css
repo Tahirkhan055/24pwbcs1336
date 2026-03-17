@@ -1,0 +1,72 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+/* Desktop Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background: #333;
+  color: white;
+}
+
+/* Tablet (Card Layout) */
+@media (max-width: 900px) {
+  table, thead, tbody, tr, td, th {
+    display: block;
+    width: 100%;
+  }
+
+  thead {
+    display: none;
+  }
+
+  tr {
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+
+  td {
+    text-align: right;
+    position: relative;
+    padding-left: 50%;
+  }
+
+  td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 10px;
+    font-weight: bold;
+    text-align: left;
+  }
+}
+
+/* Mobile (Single Column) */
+@media (max-width: 600px) {
+  td {
+    display: block;
+    text-align: left;
+    padding-left: 10px;
+  }
+
+  td::before {
+    position: static;
+    display: block;
+    margin-bottom: 5px;
+  }
+}

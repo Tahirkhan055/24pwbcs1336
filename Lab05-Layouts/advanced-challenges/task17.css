@@ -1,0 +1,34 @@
+/* -------------------------- */
+/* Responsive Utility Classes */
+/* -------------------------- */
+
+/* --- Mobile First --- */
+
+/* Show / Hide */
+.d-block { display: block; }
+.d-none { display: none; }
+
+/* Text Alignment */
+.text-left { text-align: left; }
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+
+/* Spacing */
+.m-1 { margin: 10px; }
+.p-1 { padding: 10px; }
+
+/* Flexbox Utilities */
+.d-flex { display: flex; }
+.flex-row { flex-direction: row; }
+.flex-column { flex-direction: column; }
+.justify-center { justify-content: center; }
+.align-center { align-items: center; }
+
+/* --- Tablet (768px and up) --- */
+@media (min-width: 768px) {
+  .d-md-block { display: block; }
+  .d-md-none { display: none; }
+  .text-md-center { text-align: center; }
+  .d-md-flex { display: flex; }
+  .flex-md-row { flex-direction: row; }
+}

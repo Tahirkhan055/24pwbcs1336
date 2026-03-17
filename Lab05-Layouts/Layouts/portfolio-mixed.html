@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Position Demo</title>
+
+<link rel="stylesheet" href="../styles/position.css">
+<link rel="stylesheet" href="../styles/grid.css">
+
+</head>
+
+<body>
+
+<header class="header">
+Fixed Header
+</header>
+
+<div class="content">
+
+<button onclick="openModal()">Open Modal</button>
+
+<div class="modal" id="modal">
+<div class="modal-box">
+
+<h2>Modal Dialog</h2>
+
+<p>This is modal content</p>
+
+<button onclick="closeModal()">Close</button>
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+function openModal(){
+document.getElementById("modal").style.display="block";
+}
+
+function closeModal(){
+document.getElementById("modal").style.display="none";
+}
+
+</script>
+
+<>
+
+<h1>My Portfolio</h1>
+
+<!-- Task 5 Flexbox Card Layout -->
+
+<h2>Projects</h2>
+
+<div class="card-container">
+
+<div class="card">
+<h3>Project 1</h3>
+<p>This project represents a strategic pivot toward integrated digital solutions,
+focusing on enhancing user experience through iterative design and data-driven insights.
+Our goal is to bridge the gap between complex backend architecture and intuitive frontend interfaces.</p>
+<button>View</button>
+</div>
+
+<div class="card">
+<h3>Project 2</h3>
+<p>A collaborative exploration into brand identity and visual storytelling.
+This initiative leverages minimalist aesthetics and bold 
+typography to create a cohesive narrative across all digital touchpoints,
+ensuring the brand's core values resonate with a global audience.</p>
+<button>View</button>
+</div>
+
+<div class="card">
+<h3>Project 3</h3>
+<p>An end-to-end development project aimed at optimizing resource allocation
+and workflow transparency.</p>
+<button>View</button>
+</div>
+
+</div>
+
+<!-- Task 6 Grid Photo Gallery -->
+
+<h2>Photo Gallery</h2>
+
+<div class="gallery">
+
+<img src="pexel1.jpg" width="200">
+<img src="pexel2.jpg" width="200">
+<img src="pexel3.jpg" width="200">
+<img src="pexel4.jpg" width="200">
+<img src="pexel5.jpg" width="200">
+<img src="pexel6.jpg" width="200">
+
+</div>
+
+</body>
+</html>

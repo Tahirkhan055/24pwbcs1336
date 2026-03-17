@@ -1,0 +1,100 @@
+.navbar{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+background:#222;
+
+color:white;
+
+padding:15px;
+
+}
+
+.menu{
+
+display:flex;
+
+list-style:none;
+
+gap:20px;
+
+}
+
+.menu li{
+
+cursor:pointer;
+
+}
+
+/* Task 5 Flexbox Card Layout */
+
+.card-container{
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.card{
+flex:1;
+min-width:250px;
+border:1px solid #ccc;
+padding:20px;
+display:flex;
+flex-direction:column;
+background:#f9f9f9;
+}
+
+.card button{
+margin-top:auto;
+padding:10px;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
+    padding: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    aspect-ratio: 1 / 1; 
+    object-fit: cover;   
+    border-radius: 8px;
+    display: block;      
+}
+.gallery img:hover {
+    transform: scale(1.05); 
+    transition: 0.3s ease;  
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.flex-container{
+
+display:flex;
+
+flex-direction:row;
+
+justify-content:space-around;
+
+align-items:center;
+
+height:200px;
+
+background:#eee;
+
+}
+
+.flex-item{
+
+background:steelblue;
+
+color:white;
+
+padding:20px;
+
+}

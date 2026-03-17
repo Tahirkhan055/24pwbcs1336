@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Breakpoints Example</title>
+<style>
+/* Mobile First Approach */
+/* Base styles for mobile (0px - 767px) */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem;
+}
+
+nav a {
+  color: #333;
+  text-decoration: none;
+  padding: 0.5rem;
+  background-color: white;
+  border-radius: 5px;
+  text-align: center;
+}
+
+main {
+  padding: 1rem;
+}
+
+/* Tablet (768px and up) */
+@media (min-width: 768px) {
+  nav {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  body {
+    font-size: 18px;
+  }
+}
+
+/* Small Desktop (1024px and up) */
+@media (min-width: 1024px) {
+  main {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  header {
+    font-size: 1.5rem;
+  }
+}
+
+/* Large Desktop (1200px and up) */
+@media (min-width: 1200px) {
+  main {
+    max-width: 1100px;
+  }
+
+  body {
+    font-size: 20px;
+  }
+}
+
+/* Extra Large Desktop (1400px and up) */
+@media (min-width: 1400px) {
+  main {
+    max-width: 1300px;
+  }
+
+  header {
+    font-size: 2rem;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>My Responsive Website</h1>
+</header>
+
+<nav>
+  <a href="#">Home</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Contact</a>
+</nav>
+
+<main>
+  <h2>Welcome!</h2>
+  <p>This is a simple responsive webpage using common breakpoints. Resize the browser to see how layout changes from mobile to tablet and desktop screens.</p>
+</main>
+
+</body>
+</html>
